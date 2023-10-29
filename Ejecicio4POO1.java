@@ -10,28 +10,29 @@ import java.util.Scanner;
  * @author carlo
  */
 public class Ejecicio4POO1 {
-
-    private static Object estudiantes2023;
-
-    public static void main(String[] args) {
-        Estudiantes2023 estudiantes = new Estudiantes2023();
+    
+    public static void main(String[] args) throws Exception {
+        
+        Estudiantes2023 estudiantes2023 = new Estudiantes2023();
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
-            System.out.println("****** BIENVENIDOS AL SISTEMA DE GESTION DE ESTUDIANTES ********");
+        int opcion;
+        do {
+            System.out.println("BIENVENIDOS AL SISTEMA DE GESTIÓN DE ESTUDIANTES");
             System.out.println("1-NUEVO ESTUDIANTE");
             System.out.println("2-BUSCAR ESTUDIANTE");
             System.out.println("3-ELIMINAR ESTUDIANTE");
             System.out.println("4-MODIFICAR ESTUDIANTE");
-            System.out.println("5-MODIFICAR APELLIDOS EN MINÚSCULAS.");
+            System.out.println("5-MODIFICAR APELLIDOS EN MINÚSCULAS");
             System.out.println("6-VER TODOS LOS ESTUDIANTES");
-            System.out.println("7-VER TODOS LOS ESTUDIANTE POR APELLIDOS");
-            System.out.println("8-VER TODOS LOS ESTUDIANTE POR PENSIÓN");
+            System.out.println("7-VER TODOS LOS ESTUDIANTES POR APELLIDOS");
+            System.out.println("8-VER TODOS LOS ESTUDIANTES POR PENSIÓN");
             System.out.println("9-TOTAL DE PENSIONES");
             System.out.println("10-SALIR");
+            System.out.print("Ingrese una opción: ");
 
-            int opcion = scanner.nextInt();
-            scanner.nextLine(); // Para consumir el salto de línea después de la entrada numérica.
+            opcion = scanner.nextInt();
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
