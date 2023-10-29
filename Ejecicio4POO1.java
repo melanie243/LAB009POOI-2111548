@@ -78,7 +78,7 @@ public class Ejecicio4POO1 {
                 case 3:
                       System.out.print("Ingrese el código del estudiante a eliminar: ");
                     int codigoEliminar = scanner.nextInt();
-                    Estudiante estudianteAEliminar = estudiantes.buscar(codigoEliminar);
+                    estudiante estudianteAEliminar = estudiantes.buscar(codigoEliminar);
 
                     if (estudianteAEliminar != null) {
                         estudiantes.eliminarEstudiante(estudianteAEliminar);
